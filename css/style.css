@@ -45,6 +45,10 @@
     background-color: brown;
     padding: 20px;
   }
+  .img {
+    max-width: 100%;
+    height: auto;
+  }
   .wrapper {
 max-width: 1060px;
 margin: 0 auto;
@@ -152,6 +156,9 @@ margin: 0 auto;
   /* Intro styles end */
 
   /* Benifits styles start */
+.benifits{
+  margin-bottom: 131px;
+  }
 .benifits_wrapper{
   max-width: 1262px;
   margin: 0 auto;
@@ -175,7 +182,50 @@ margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 55px;
+  padding: 0px 100px;
 }
+.benifits_card {
+  grid-column: span 1;
+  margin-bottom: 112px;
+}
+
+.benifits_icon {
+  margin-bottom: 37px;
+  max-width: 66px;
+}
+
+.benifits_icon_trump {
+  display: block;
+}
+
+.benifits_card-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.benifits_desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 39px;
+}
+
+.benifits_more {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #006DFE;
+background: url(../img/svg/Shape.svg) no-repeat 95% center;
+padding-right: 59px;
+transition: .2s all;
+text-decoration: none;
+}
+.benifits_more:hover,.benifits_more:focus {
+  background: url(../img/svg/Shape.svg) no-repeat right center;
+
+}
+
 
 
 
