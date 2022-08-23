@@ -258,6 +258,9 @@ text-decoration: none;
   /* Benifits styles end */
 
 /* Places styles start */
+.places{
+  margin-bottom: 131px;
+}
 .paces_caption{
   display:flex;
   flex-wrap: wrap;
@@ -286,11 +289,6 @@ padding-right: 59px;
   display:grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
-
-
-
-  /* delete */
-  margin-bottom: 50px;
 }
 
 .place_card{
@@ -353,8 +351,5 @@ padding-right: 59px;
   left: 0;
   z-index: 4;
 }
-
-
-
 
  /* Places styles end */
