@@ -8,3 +8,16 @@
          }
     }
 }())
+
+(function(){
+const burgerMenu=document.querySelector('.burger')
+const nawItem= document.querySelector('.header_nav')
+const closeItem=document.querySelector('.header_close')
+burgerMenu.addEventListener('click', ()=>{
+    nawItem.classList.add('header_nav_active')
+})
+closeItem.addEventListener('click', ()=>{
+    nawItem.classList.remove('header_nav_active')
+})
+
+}())
