@@ -9,7 +9,7 @@
     }
 }())
 
-(function(){
+(function () {
 const burgerMenu=document.querySelector('.burger')
 const nawItem= document.querySelector('.header_nav')
 const closeItem=document.querySelector('.header_close')
