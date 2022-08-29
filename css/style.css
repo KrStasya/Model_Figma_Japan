@@ -704,8 +704,122 @@ grid-column: span 6;
   .close_line:last-child {
     transform: translateY(-50%) rotate(-45deg);
   } 
+  .header_wrapper {
+    padding-top: 25px;
+}
+
+.title_full::after {
+  width: 73px;
+  
+}
+  .intro {
+    padding-top: 115px;
+    padding-bottom: 223px;
+}
+  .intro_title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 22px;
+}
+  .search_form_field {
+    margin-right: 0px;
+    padding-bottom: 15px;
+    font-size: 16px; 
+}
+.search_form_submit {
+  width: 100%;
+  font-size: 24px;
+}
+.benifits {
+  margin-bottom: 35px;
+}
+.bebifits_title {
+  padding: 35px 15px;
+}
+.benifits_cards {
+  grid-template-columns: repeat(1, 1fr); 
+  padding: 25px;
+}
+.place_card {
+  margin-bottom: 5px;
+}
+.benifits_desc {
+  margin-bottom: 20px;
+}
+.benifits_card {
+  margin-bottom: 30px;
+}
+.paces_caption {
+  margin-bottom: 26px;
+}
+.places_view_all {
+  padding-top: 15px;
+}
+.place_card_pic_lg,.place_card_pic_sm {
+  height: 200px;
+}
+.place_card_caption {
+  font-size: 30px;
+}
+.places {
+  margin-bottom: 35px;
+}
+.tour {
+  margin-bottom: 15px;
+}
+.tours_places_tour {
+  grid-template-columns: repeat(1, 1fr);
+}
+.tour_caption {
+  margin-bottom: 25px;
+}
+.for_width_less_than_768px {
+  grid-row-start: -1
+}
+.tour_caption {
+  margin-bottom: 15px;
+}
+.tours_places_tour {
+  grid-gap: 10px;
+  margin-bottom: 25px;
+}
+.tour_des {
+  margin-bottom: 20px;
+}
+tour_place_pic {
+  margin-bottom: 20px;
+}
+
+.top_places {
+  margin-bottom: 15px;
+}
+
+.places_to_visit {
+  grid-template-columns: repeat(1, 1fr);
+}
+.places_to_visit_title {
+  margin-bottom: 25px;
+}
+.place_to_visit_pic {
+  margin-bottom: 15px;
+}
+.footer {
+  padding: 25px 0px;
+}
+
+.footer_logo {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.footer_links {
+  width: 100%;
+}
+.footer_menu {
+  width: 50%;
+  margin-bottom: 12px;
+}
 }
 
 /* Media end */
 
- 
+
