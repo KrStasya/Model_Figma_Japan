@@ -161,7 +161,7 @@ top: 0;
  /* Intro styles start */
  .intro {
   min-height: 100vh;
-  background: url(../img/svg/Hero.svg) no-repeat;
+  background: url(../img/Hero-min.jpg) no-repeat;
   background-size: cover;
   padding-top: 263px;
   padding-bottom: 223px;
