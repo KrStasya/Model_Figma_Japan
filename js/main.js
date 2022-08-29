@@ -13,12 +13,20 @@
 const burgerMenu=document.querySelector('.burger')
 const nawItem= document.querySelector('.header_nav')
 const closeItem=document.querySelector('.header_close')
+const menuLinks=document.querySelectorAll('.header_link')
 burgerMenu.addEventListener('click', ()=>{
     nawItem.classList.add('header_nav_active')
 })
 closeItem.addEventListener('click', ()=>{
     nawItem.classList.remove('header_nav_active')
 })
+if (window.innerWidth <= 767) {
+    for (let i=0; i < menuLinks.length ; i+=1){
+        menuLinks[i].addEventListener('click', ()=>{
+            nawItem.classList.remove('header_nav_active')
+        })  
+    }
+}
 
 }());
 
