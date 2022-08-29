@@ -1,279 +1,279 @@
 /* lato-regular - latin */
 @font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* lato-700 - latin */
-  @font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-         url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* lato-900 - latin */
-  @font-face {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    src: local(''),
-         url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  html {
-    box-sizing: border-box;
-  }
- *,*::before,*::after{
-    box-sizing: inherit;
- }
- body {
   font-family: 'Lato';
   font-style: normal;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: normal;
-  color: #102746;;
- }
-  .item {
-    width: 100px;
-    height: 200px;
-    background-color: brown;
-    padding: 20px;
-  }
-  .img {
-    max-width: 100%;
-    height: auto;
-  }
-  .figure{
-    margin: 0 auto;
-    padding: 0;
-  }
-  .figcaption{
-    margin: 0 auto;
-    padding: 0;
-  }
-  .wrapper {
-  max-width: 1060px;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html {
+  box-sizing: border-box;
+}
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+body {
+font-family: 'Lato';
+font-style: normal;
+font-size: 16px;
+line-height: 1.2;
+font-weight: normal;
+color: #102746;;
+}
+.item {
+  width: 100px;
+  height: 200px;
+  background-color: brown;
+  padding: 20px;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+.figure{
+  margin: 0 auto;
+  padding: 0;
+}
+.figcaption{
+  margin: 0 auto;
+  padding: 0;
+}
+.wrapper {
+max-width: 1060px;
+margin: 0 auto;
+padding: 15px;
+}
+.wrapper_full {
+  max-width: 1262px;
   margin: 0 auto;
   padding: 15px;
-  }
-  .wrapper_full {
-    max-width: 1262px;
-    margin: 0 auto;
-    padding: 15px;
-  }
-  .title_full {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 42px;
-    color: #102746;
-    position: relative;
-    padding-bottom: 10px;
-  }
+}
+.title_full {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  color: #102746;
+  position: relative;
+  padding-bottom: 10px;
+}
 
-  .title_full::after{
-    display: block;
-    content: "";
-    width: 253px;
-    height: 3px;
-    background-color: #1B7DFF;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+.title_full::after{
+  display: block;
+  content: "";
+  width: 253px;
+  height: 3px;
+  background-color: #1B7DFF;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
-  /* Header styles start */
+/* Header styles start */
 
 .header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: 0.2 linear;
-  padding: 20px;
-  z-index: 999;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+transition: 0.2 linear;
+padding: 20px;
+z-index: 999;
 }
 .header_active{
-  background: #0E1D28;;
+background: #0E1D28;;
 }
 
 .header_wrapper{
-  display:flex;
-  flex-wrap: wrap;
-  align-items:flex-end;
-  justify-content: space-between;
-  padding-top: 56px;
+display:flex;
+flex-wrap: wrap;
+align-items:flex-end;
+justify-content: space-between;
+padding-top: 56px;
 }
 .heaher_list{
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 
 }
 .header_item {
-  margin-right: 82px;
+margin-right: 82px;
 }
 .header_item:last-child {
-  margin-right: 0;
+margin-right: 0;
 }
 .header_link{
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #FFFFFF;
-  text-decoration: none;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+color: #FFFFFF;
+text-decoration: none;
 }
 .header_link:hover,.header_link:focus,.header_link:active {
-  opacity: .75;
+opacity: .75;
 }
 .menu_burger{
-  display: none;
-  position: relative;
-  width: 40px;
-  height: 28px;
-  z-index: 6;
+display: none;
+position: relative;
+width: 40px;
+height: 28px;
+z-index: 6;
 }
 .menu_burger_line{
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color:white;
+position: absolute;
+display: block;
+left: 0;
+width: 100%;
+height: 2px;
+background-color:white;
 }
 .menu_burger_line_first:first-child{
 top: 0;
 }
 .menu_burger_line_second{
-  top:50%;
-  transform:translateY(-50%);
+top:50%;
+transform:translateY(-50%);
 }
 .menu_burger_line_third:last-child{
-  bottom: 0;
-  }
+bottom: 0;
+}
 
- /* Header styles end */
+/* Header styles end */
 
- /* Intro styles start */
- .intro {
-  min-height: 100vh;
-  background: url(../img/Hero-min.jpg) no-repeat;
-  background-size: cover;
-  padding-top: 263px;
-  padding-bottom: 223px;
- }
+/* Intro styles start */
+.intro {
+min-height: 100vh;
+background: url(../img/Hero-min.jpg) no-repeat;
+background-size: cover;
+padding-top: 263px;
+padding-bottom: 223px;
+}
 .intro_title {
-  max-width: 619px;
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 60px;
-  color: #FFFFFF;
-  margin-bottom: 22px;
+max-width: 619px;
+font-weight: 500;
+font-size: 50px;
+line-height: 60px;
+color: #FFFFFF;
+margin-bottom: 22px;
 }
 .intro_sustitle {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px; 
-  color: #FFFFFF;
-  max-width: 546px;
-  margin-bottom: 59px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px; 
+color: #FFFFFF;
+max-width: 546px;
+margin-bottom: 59px;
 }
 .search_form_info {
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 
 .search_form_field {
-  width: 297px;
-  background: transparent url(../img/svg/Oval.svg) no-repeat left 6px;
-  background-size: 20px;
-  border: 0;
-  border-bottom: 2px solid #BFC0C5;
-  margin-right: 60px;
-  padding-left: 43px;
-  padding-bottom: 22px;
-   font-weight: 500; 
-  font-size: 18px;
-  color: #FFFFFF;
+width: 297px;
+background: transparent url(../img/svg/Oval.svg) no-repeat left 6px;
+background-size: 20px;
+border: 0;
+border-bottom: 2px solid #BFC0C5;
+margin-right: 60px;
+padding-left: 43px;
+padding-bottom: 22px;
+ font-weight: 500; 
+font-size: 18px;
+color: #FFFFFF;
 }
 .search_form_field::placeholder {
-  font-weight: 500;
-  font-size: 18px;
-  color: #FFFFFF;
+font-weight: 500;
+font-size: 18px;
+color: #FFFFFF;
 }
 
 .search_form_submit {
-  background: #1B7DFF;
-  width: 171px;
-  height: 58px;
-  border: 0;
- font-weight: 500;
- font-size: 24px;
- color: #FFFFFF;
+background: #1B7DFF;
+width: 171px;
+height: 58px;
+border: 0;
+font-weight: 500;
+font-size: 24px;
+color: #FFFFFF;
 }
 .search_form_submit:hover,.search_form_submit:active,.search_form_submit:focus {
-  background: #072956;
+background: #072956;
 }
-  /* Intro styles end */
+/* Intro styles end */
 
-  /* Benifits styles start */
+/* Benifits styles start */
 .benifits{
-  margin-bottom: 131px;
-  }
+margin-bottom: 131px;
+}
 .benifits_wrapper{
-  max-width: 1262px;
-  margin: 0 auto;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
-  position: relative;
+max-width: 1262px;
+margin: 0 auto;
+background: #FFFFFF;
+box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+position: relative;
 }
 .bebifits_title {
-  width: 100%;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 42px;
-  padding: 93px 100px 88px 99px;
-  top: 0;
-  left: 0;
-  position: absolute;
-  transform: translateY(-100%);
-  background-color: #FFFFFF;
+width: 100%;
+font-weight: 500;
+font-size: 35px;
+line-height: 42px;
+padding: 93px 100px 88px 99px;
+top: 0;
+left: 0;
+position: absolute;
+transform: translateY(-100%);
+background-color: #FFFFFF;
 }
 .benifits_cards{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 55px;
-  padding: 0px 100px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-column-gap: 55px;
+padding: 0px 100px;
 }
 .benifits_card {
-  grid-column: span 1;
-  margin-bottom: 112px;
+grid-column: span 1;
+margin-bottom: 112px;
 }
 
 .benifits_icon {
-  margin-bottom: 37px;
-  max-width: 66px;
+margin-bottom: 37px;
+max-width: 66px;
 }
 
 .benifits_icon_trump {
-  display: block;
+display: block;
 }
 
 .benifits_card-title {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
 }
 
 .benifits_desc {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 39px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 39px;
 }
 
 .benifits_more {
@@ -287,25 +287,25 @@ transition: .2s all;
 text-decoration: none;
 }
 .benifits_more:hover,.benifits_more:focus {
-  background: url(../img/svg/Shape.svg) no-repeat right center;
+background: url(../img/svg/Shape.svg) no-repeat right center;
 }
-  /* Benifits styles end */
+/* Benifits styles end */
 
 /* Places styles start */
 .places{
-  margin-bottom: 131px;
+margin-bottom: 131px;
 }
 .paces_caption{
-  display:flex;
-  flex-wrap: wrap;
-  align-items:center;
-  justify-content:space-between;
-   margin-bottom: 46px; 
-  position: relative;
+display:flex;
+flex-wrap: wrap;
+align-items:center;
+justify-content:space-between;
+ margin-bottom: 46px; 
+position: relative;
 }
-  .places_title {
+.places_title {
 margin-right: 15px;
-  }
+}
 .places_view_all{
 font-weight: 400;
 font-size: 16px;
@@ -316,164 +316,164 @@ background: url(../img/svg/Shape.svg) no-repeat right center;
 padding-right: 59px;
 }
 .places_view_all:hover,places_view_all:focus{
-  opacity: 0.5;
+opacity: 0.5;
 }
 
 .places_cards {
-  display:grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: 10px;
+display:grid;
+grid-template-columns: repeat(6, 1fr);
+grid-column-gap: 10px;
 }
 
 .place_card{
-  position: relative;
-  overflow: hidden;
+position: relative;
+overflow: hidden;
 }
 .place_card::after{
-  display: block;
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: rgba(21, 24, 36, 0.4);;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
+display: block;
+content: '';
+width: 100%;
+height: 100%;
+background-color: rgba(21, 24, 36, 0.4);;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
 }
 
 .place_card:hover .place_card_pic{
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 
 .place_card_size_lg {
-  grid-column: span 3;
+grid-column: span 3;
 }
 
 .place_card_size_sm {
-  grid-column: span 2;
+grid-column: span 2;
 }
 
 .place_card_caption {
-  position: absolute;
-  bottom: 27px;
-  left: 29px;
-  z-index: 4;
-  
-  font-size: 50px;
-  line-height: 60px;
-  color: #FFFFFF;
+position: absolute;
+bottom: 27px;
+left: 29px;
+z-index: 4;
+
+font-size: 50px;
+line-height: 60px;
+color: #FFFFFF;
 }
 .place_card_pic{
-  width: 100%;
-  object-fit: cover;
-  transition: .15s all;
+width: 100%;
+object-fit: cover;
+transition: .15s all;
 }
 .place_card_pic_lg{
-  height: 354px;
+height: 354px;
 }
 
 
 .place_card_pic_sm{
-  height: 283px;
+height: 283px;
 }
 
 .place_card_link{
-  position: absolute;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: 4;
+}
+/* Places styles end */
+
+/* Tour styles start */
+.tour{
+margin-bottom: 139px;
+}
+.tours_places_tour{
+display:grid;
+grid-template-columns: repeat(2, 1fr);
+grid-column-gap: 130px;
+align-items: center;
+margin-bottom: 77px;
+}
+.tour_caption{
+font-size: 30px;
+line-height: 40px;
+margin-bottom: 85px;
+}
+.tour_des{
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 58px;
+}
+.tour_veiw_more {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #006DFE;
+text-decoration: none;
+background: url(../img/svg/Shape.svg) no-repeat right center;
+padding-right: 59px;
+}
+.tour_veiw_more:hover,.tour_veiw_more:focus{
+  opacity: 0.5;
+}
+.tour_place_pic{
+  grid-column: span 1;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 4;
 }
- /* Places styles end */
-
- /* Tour styles start */
- .tour{
-  margin-bottom: 139px;
- }
- .tours_places_tour{
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 130px;
-  align-items: center;
-  margin-bottom: 77px;
- }
- .tour_caption{
-  font-size: 30px;
-  line-height: 40px;
-  margin-bottom: 85px;
- }
- .tour_des{
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 58px;
- }
- .tour_veiw_more {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #006DFE;
-  text-decoration: none;
-  background: url(../img/svg/Shape.svg) no-repeat right center;
-  padding-right: 59px;
-  }
-  .tour_veiw_more:hover,.tour_veiw_more:focus{
-    opacity: 0.5;
-  }
-  .tour_place_pic{
-    grid-column: span 1;
-    width: 100%;
-  }
-  .tour_place_thumb{
-    width: 100%;
-    object-fit: cover;
-  }
-  .tour_info{
-    padding-left: 47px;
-    grid-column: span 1;
-  }
-
- /* Tour styles end */
-
-  /* Top places styles start */
-.top_places{
-  margin-bottom: 86px;
-}
-.places_to_visit_title{
-  margin-bottom: 54px;
-}
-.places_to_visit{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 57px;
-  margin-bottom: 58px;
-}
-
-.place_to_vizit{
-  /* grid-column: span 1; */
-  display:flex;
-  flex-direction: column;
-}
-.place_to_visit_pic{ 
-  position: relative;
-  margin-bottom: 45px;
-}
-
-.place_to_visit_thumb{
+.tour_place_thumb{
   width: 100%;
   object-fit: cover;
 }
+.tour_info{
+  padding-left: 47px;
+  grid-column: span 1;
+}
+
+/* Tour styles end */
+
+/* Top places styles start */
+.top_places{
+margin-bottom: 86px;
+}
+.places_to_visit_title{
+margin-bottom: 54px;
+}
+.places_to_visit{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 57px;
+margin-bottom: 58px;
+}
+
+.place_to_vizit{
+/* grid-column: span 1; */
+display:flex;
+flex-direction: column;
+}
+.place_to_visit_pic{ 
+position: relative;
+margin-bottom: 45px;
+}
+
+.place_to_visit_thumb{
+width: 100%;
+object-fit: cover;
+}
 
 .visit_card_status {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background-color:rgba(21, 24, 36, 0.6); 
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 16px 25px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+background-color:rgba(21, 24, 36, 0.6); 
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+padding: 16px 25px;
 }
 .visit_place_like{
 font-weight: 500;
@@ -496,70 +496,70 @@ background: url(../img/svg/comments.svg) no-repeat right center;
 
 
 .place_to_visit_title{
-  font-size: 18px;
-  line-height: 24px;
-  color: #FFFFFF;
-  margin: 0 auto 0 0;
+font-size: 18px;
+line-height: 24px;
+color: #FFFFFF;
+margin: 0 auto 0 0;
 }
 
 .place_to_visit_dec{
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 31px;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 31px;
 }
 .see_more {
-  background: #006DFE;
-  width: 118px;
-  padding: 12px 20px;
-  border: 0;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-  text-decoration: none;
-  margin: auto 0 0 0 ;
+background: #006DFE;
+width: 118px;
+padding: 12px 20px;
+border: 0;
+font-size: 16px;
+line-height: 19px;
+color: #FFFFFF;
+text-decoration: none;
+margin: auto 0 0 0 ;
 }
- /* Top places styles end */
+/* Top places styles end */
 
- /* Video start */
- .video {
-  width: 100%;
-  
- }
- .video_wrap{
-  max-width: 1440px;
-  position: relative;
-  margin: 0 auto;
- }
- .video_item {
+/* Video start */
+.video {
+width: 100%;
+
+}
+.video_wrap{
+max-width: 1440px;
+position: relative;
+margin: 0 auto;
+}
+.video_item {
 padding-top: 56.25%;
- }
- .video_elem {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
- }
- /* Video end */
+}
+.video_elem {
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+}
+/* Video end */
 
 
- /* Footer start */
- .footer{
-  background: #0E1D28;
-  padding: 118px 0px;
- }
+/* Footer start */
+.footer{
+background: #0E1D28;
+padding: 118px 0px;
+}
 .footer_info {
-  display: flex;
-  flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
 }
 .footer_logo{
-  width: 50%;
+width: 50%;
 }
 .footer_links{
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+width: 50%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
 .footer_title{
 font-size: 18px;
@@ -579,244 +579,244 @@ opacity: .75;
 
 /* Media start */
 @media screen and (max-width: 960px) {
-  .search_form_field  {
-    margin-bottom: 25px;
-  }
-  .benifits_cards {
-    padding: 0px 15px;
-    grid-column-gap: 35px;
-  }
-  .bebifits_title {
-    padding: 55px 15px;
-  }
+.search_form_field  {
+  margin-bottom: 25px;
+}
+.benifits_cards {
+  padding: 0px 15px;
+  grid-column-gap: 35px;
+}
+.bebifits_title {
+  padding: 55px 15px;
+}
 .benifits_wrapper{
-  box-shadow: 0px 2px 20px rgb(21 24 36 / 16%);
+box-shadow: 0px 2px 20px rgb(21 24 36 / 16%);
 }
 .benifits {
-  margin-bottom: 75px;
+margin-bottom: 75px;
 }
 .benifits_card {
-  margin-bottom: 60px;
+margin-bottom: 60px;
 }
 .places{
-  margin-bottom: 75px;
+margin-bottom: 75px;
 }
 .place_card_size_lg {
-  grid-column: span 6;
+grid-column: span 6;
 }
 .place_card_size_sm {
 grid-column: span 6;
 }
 .tour {
-  margin-bottom: 75px;
+margin-bottom: 75px;
 }
 .tours_places_tour {
-  grid-gap: 75px;
-  align-items: center;
-  margin-bottom: 35px;
+grid-gap: 75px;
+align-items: center;
+margin-bottom: 35px;
 }
 .tour_info {
-   padding-left: 0px; 
+ padding-left: 0px; 
 }
 .tour_des {
-  margin-bottom: 28px;
+margin-bottom: 28px;
 }
 .tour_caption {
-  margin-bottom: 35px;
+margin-bottom: 35px;
 }
 
 .top_places {
-  margin-bottom: 45px;
+margin-bottom: 45px;
 }
 .places_to_visit {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 35px;
-  margin-bottom: 58px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-column-gap: 35px;
+margin-bottom: 58px;
 }
 
 .footer {
-  background: #0E1D28;
-  padding: 57px 0px;
+background: #0E1D28;
+padding: 57px 0px;
 }
 
 .footer_logo {
-  width: 40%;
-  margin-left: 15px;
+width: 40%;
+margin-left: 15px;
 }
 }
 
 
 
 @media screen and (max-width: 768px) {
-  .menu_burger{
-    display: block;
-  }
-  .header_nav {
-    position: fixed;
-    top: 0;
-    right:0;
-    width: 100%;
-    height: 100%;
-    /* background-color:rgba(21, 24, 36, 0.4); */
-   background-color:black;
-    z-index: 7;
-    padding: 75px;
-    transform: translateX(-100%);
-    transition: .2s all linear;
-  }
-  .header_nav_active{
-    transform: translateX(0);
-  }
-  .header_item{
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 30px;
-      }
-   .header_item:last-child{
-     margin-bottom: 0;
-  }
+.menu_burger{
+  display: block;
+}
+.header_nav {
+  position: fixed;
+  top: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  /* background-color:rgba(21, 24, 36, 0.4); */
+ background-color:black;
+  z-index: 7;
+  padding: 75px;
+  transform: translateX(-100%);
+  transition: .2s all linear;
+}
+.header_nav_active{
+  transform: translateX(0);
+}
+.header_item{
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 30px;
+    }
+ .header_item:last-child{
+   margin-bottom: 0;
+}
 
-  .header_link{
-    font-size: 42px;
-    line-height: 48px;
-  }
-  .header_close{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 13;
-  }
-  .close_line{
-    display: block;
-    height: 2px;
-    width: 100%;
-    left: 0;
-     top: 50%; 
-    background-color:white;
-     position: absolute; 
-  }
-  .close_line:first-child{
-    transform: translateY(-50%) rotate(45deg);
-  } 
-  .close_line:last-child {
-    transform: translateY(-50%) rotate(-45deg);
-  } 
-  .header_wrapper {
-    padding-top: 25px;
+.header_link{
+  font-size: 42px;
+  line-height: 48px;
+}
+.header_close{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 13;
+}
+.close_line{
+  display: block;
+  height: 2px;
+  width: 100%;
+  left: 0;
+   top: 50%; 
+  background-color:white;
+   position: absolute; 
+}
+.close_line:first-child{
+  transform: translateY(-50%) rotate(45deg);
+} 
+.close_line:last-child {
+  transform: translateY(-50%) rotate(-45deg);
+} 
+.header_wrapper {
+  padding-top: 25px;
 }
 
 .title_full::after {
-  width: 73px;
-  
+width: 73px;
+
 }
-  .intro {
-    padding-top: 115px;
-    padding-bottom: 223px;
+.intro {
+  padding-top: 115px;
+  padding-bottom: 223px;
 }
-  .intro_title {
-    font-size: 32px;
-    line-height: 40px;
-    margin-bottom: 22px;
+.intro_title {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 22px;
 }
-  .search_form_field {
-    margin-right: 0px;
-    padding-bottom: 15px;
-    font-size: 16px; 
+.search_form_field {
+  margin-right: 0px;
+  padding-bottom: 15px;
+  font-size: 16px; 
 }
 .search_form_submit {
-  width: 100%;
-  font-size: 24px;
+width: 100%;
+font-size: 24px;
 }
 .benifits {
-  margin-bottom: 35px;
+margin-bottom: 35px;
 }
 .bebifits_title {
-  padding: 35px 15px;
+padding: 35px 15px;
 }
 .benifits_cards {
-  grid-template-columns: repeat(1, 1fr); 
-  padding: 25px;
+grid-template-columns: repeat(1, 1fr); 
+padding: 25px;
 }
 .place_card {
-  margin-bottom: 5px;
+margin-bottom: 5px;
 }
 .benifits_desc {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 .benifits_card {
-  margin-bottom: 30px;
+margin-bottom: 30px;
 }
 .paces_caption {
-  margin-bottom: 26px;
+margin-bottom: 26px;
 }
 .places_view_all {
-  padding-top: 15px;
+padding-top: 15px;
 }
 .place_card_pic_lg,.place_card_pic_sm {
-  height: 200px;
+height: 200px;
 }
 .place_card_caption {
-  font-size: 30px;
+font-size: 30px;
 }
 .places {
-  margin-bottom: 35px;
+margin-bottom: 35px;
 }
 .tour {
-  margin-bottom: 15px;
+margin-bottom: 15px;
 }
 .tours_places_tour {
-  grid-template-columns: repeat(1, 1fr);
+grid-template-columns: repeat(1, 1fr);
 }
 .tour_caption {
-  margin-bottom: 25px;
+margin-bottom: 25px;
 }
 .for_width_less_than_768px {
-  grid-row-start: -1
+grid-row-start: -1
 }
 .tour_caption {
-  margin-bottom: 15px;
+margin-bottom: 15px;
 }
 .tours_places_tour {
-  grid-gap: 10px;
-  margin-bottom: 25px;
+grid-gap: 10px;
+margin-bottom: 25px;
 }
 .tour_des {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 tour_place_pic {
-  margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .top_places {
-  margin-bottom: 15px;
+margin-bottom: 15px;
 }
 
 .places_to_visit {
-  grid-template-columns: repeat(1, 1fr);
+grid-template-columns: repeat(1, 1fr);
 }
 .places_to_visit_title {
-  margin-bottom: 25px;
+margin-bottom: 25px;
 }
 .place_to_visit_pic {
-  margin-bottom: 15px;
+margin-bottom: 15px;
 }
 .footer {
-  padding: 25px 0px;
+padding: 25px 0px;
 }
 
 .footer_logo {
-  width: 100%;
-  margin-bottom: 12px;
+width: 100%;
+margin-bottom: 12px;
 }
 .footer_links {
-  width: 100%;
+width: 100%;
 }
 .footer_menu {
-  width: 50%;
-  margin-bottom: 12px;
+width: 50%;
+margin-bottom: 12px;
 }
 }
 
